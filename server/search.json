@@ -1,0 +1,26 @@
+{
+    "index_patterns": ["search-teste"],
+    "settings": {
+      "index": {
+        "search": {
+          "slowlog": {
+            "threshold": {
+              "query": {
+                "warn": "10s",
+                "info": "5s",
+                "debug": "2s",
+                "trace": "500ms"
+              },
+              "fetch": {
+                "warn": "1s",
+                "info": "800ms",
+                "debug": "500ms",
+                "trace": "200ms"
+              }
+            },
+            "level": "info"
+          }
+        }
+      }
+    }
+  }
